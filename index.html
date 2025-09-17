@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sushanth Subramanian - UI/UX Designer Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Embedded CSS -->
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #3498db;
+      --accent-color: #e74c3c;
+      --background-color: #f4f4f4;
+      --text-color: #333;
+      --gradient: linear-gradient(135deg, #3498db, #9b59b6);
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      background: var(--background-color);
+      color: var(--text-color);
+      margin: 0;
+    }
+
+    .main-header {
+      background: var(--gradient);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 1.2rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    .hero-section {
+      text-align: center;
+      padding: 6rem 2rem;
+      background: var(--gradient);
+      color: #fff;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .hero-section h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-section p {
+      font-size: 1.2rem;
+    }
+
+    .content-section {
+      padding: 3rem 2rem;
+      background: #fff;
+      max-width: 900px;
+      margin: 2rem auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    .content-section h2 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--secondary-color);
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    .content-section ul {
+      text-align: left;
+      list-style: none;
+      padding: 0;
+    }
+
+    .content-section ul li::before {
+      content: "• ";
+      color: var(--secondary-color);
+      font-weight: bold;
+    }
+
+    .main-footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: var(--gradient);
+      color: #fff;
+      margin-top: 2rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="main-header">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#objective">Objective</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#education">Education</a>
+      <a href="#languages">Languages</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero-section">
+    <h1>Sushanth Subramanian</h1>
+    <p>UI/UX Designer | Aspiring Tech Professional | Enthusiastic Learner</p>
+    <p>📍 Coimbatore, Tamilnadu | 📞 +91-9342756019 | ✉️ sushanth5131@gmail.com</p>
+  </section>
+
+  <section id="objective" class="content-section">
+    <h2>Career Objective</h2>
+    <p>
+      Looking for a challenging role in a reputable organization to utilize my technical and management 
+      skills for the growth of the organization as well as to enhance my skills in an environment & 
+      collaborative team. A punctual, attentive listener, and a team player with excellent teamwork settings. 
+      Enthusiastic to join vibrant teams and develop professionally in the tech sector.
+    </p>
+  </section>
+
+  <section id="skills" class="content-section">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>C & C++</li>
+      <li>MySQL</li>
+      <li>HTML & CSS</li>
+      <li>Soft Skills: Innovation, Collaboration, Time Management, Teamwork</li>
+    </ul>
+  </section>
+
+  <section id="certificates" class="content-section">
+    <h2>Certificates</h2>
+    <ul>
+      <li>Managing Network Security</li>
+      <li>Designing User Interfaces & Experiences (UI/UX)</li>
+      <li>Business Analysis & Process Management</li>
+      <li>Web Design / Wireframes to Prototypes</li>
+    </ul>
+  </section>
+
+  <section id="education" class="content-section">
+    <h2>Education</h2>
+    <p>
+      Bachelor of Science in Computer Technology <br>
+      KG College of Arts & Science, Coimbatore
+    </p>
+  </section>
+
+  <section id="languages" class="content-section">
+    <h2>Languages</h2>
+    <ul>
+      <li>English</li>
+      <li>Tamil</li>
+      <li>Malayalam</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="content-section">
+    <h2>Get In Touch</h2>
+    <form id="contact-form">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="main-footer">
+    <p>&copy; 2024 Sushanth Subramanian. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
